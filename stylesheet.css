@@ -1,0 +1,49 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.builds {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.build {
+  position: relative;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  height: 100%;
+  transition: background-color 0.5s ease-in-out;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.build h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+  left: 0;
+  right: 0;
+  opacity: 0.6;
+}
+
+.build.failure {
+  background-color: #aa0000;
+}
+
+.build.success {
+  background-color: #30aa00;
+}
+
+.build.building {
+  background-color: #d79300;
+}
