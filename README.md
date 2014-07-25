@@ -1,6 +1,6 @@
 # Buildbox Build Status
 
-This is a super lo-fi, Herokuable (Totally a verb, shut up) build server indicator. It doesn't need anything other than a browser.
+This is a super lo-fi, Heroku-able (Totally a verb, shut up) build server indicator. It doesn't need anything other than a browser.
 
 ## Setup
 
