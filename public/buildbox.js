@@ -1,10 +1,11 @@
 (function() {
+  var url = 'https://cc.buildbox.io/' + Settings.project + '.xml?api_key=' + Settings.apiKey;
   var fetchBuildStatus = function(callback) {
     var request = new XMLHttpRequest();
     request.onload = function(result) {
       callback(null, result.target.responseXML);
     }
-    request.open("get", "/feed.xml");
+    request.open("get", url);
     request.send();
   }
 
@@ -17,7 +18,7 @@
       var firstLetter = letters.shift();
       words[i] = firstLetter.toUpperCase() + letters.join('');
     }
-    
+
     return words.join(' ');
   }
 
@@ -40,7 +41,7 @@
         html += '<div id="' + name + '" class="build ' + activity + ' ' + lastStatus + '">';
         html += '<h1>' + humanize(name) + '</h1>';
         html += '</div>';
-        builds[0].innerHTML = html;  
+        builds[0].innerHTML = html;
         rendered.push(name);
       }
     }
