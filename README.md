@@ -11,3 +11,7 @@ Clone, then make a copy of ```public/settings.example.js``` and fill you buildbo
 Put the stuff in public on a webserver, and hit the server. All done.
 
 Otherwise, create a Heroku site and push it. It should just work(tm).
+
+![screenshot](https://cloud.githubusercontent.com/assets/153/3697281/1590b774-13a3-11e4-907d-e94374969e6f.jpg)
+
+![yeah](https://cloud.githubusercontent.com/assets/153/3697282/223ef120-13a3-11e4-8d6e-71fcdc009f63.jpg)
